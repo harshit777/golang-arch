@@ -27,4 +27,9 @@ func main() {
 	}
 
 	fmt.Println(string(bs))
+
+	xp2 := []person{}
+	json.Unmarshal(bs, &xp2)
+
+	fmt.Println("Back to go", xp2)
 }
